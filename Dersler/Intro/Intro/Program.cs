@@ -1,5 +1,6 @@
 ﻿
 using Intro.Business;
+using Intro.DataAccess.Concrete;
 using Intro.Entities;
 
 Console.WriteLine("Hello, World!");
@@ -123,10 +124,73 @@ for (int i = 0; i < courses.Length; i++)
 }
 
 Console.WriteLine("------------------");
-CourseManager courseManager = new CourseManager();
-Course[] courses2 = courseManager.GetAll();
-for (int i = 0; i < courses2.Length; i++)
+CourseManager courseManager = new (new CourseDal());
+List<Course> courses2 = courseManager.GetAll();
+for (int i = 0; i < courses2.Count; i++)
 {
     Console.WriteLine(courses2[i].Name + " / " + courses2[i].Price);
 }
 courseManager.GetAll();
+
+/**
+ * Inheritance : Kalıtım, miras alma demektir. Bir sınıfın özelliklerini başka bir sınıfa aktarmak için kullanılır.
+ * Kalıtım alınan sınıf : Base Class, Parent Class, Super Class
+ 
+ */
+
+
+IndivudalCustomer customer1 = new IndivudalCustomer();
+customer1.ID = 1;
+customer1.NationalIdentity = "1234567890";
+customer1.CustomerNumber = "12345";
+customer1.FirstName = "Berkcan";
+customer1.LastName = "Gümüşışık";
+
+
+IndivudalCustomer customer2 = new IndivudalCustomer();
+customer2.ID = 2;
+customer2.NationalIdentity = "0987654322";
+customer2.CustomerNumber = "54321";
+customer2.FirstName = "Engin";
+customer2.LastName = "Demiroğ";
+
+
+CorporateCustomer customer3 = new CorporateCustomer();
+customer3.ID = 3;
+customer3.CustomerNumber = "99999";
+customer3.CompanyName = "Kodlama.io";
+customer3.TaxNumber = "1234567890";
+
+
+CorporateCustomer customer4 = new CorporateCustomer();
+customer4.ID = 4;
+customer4.CustomerNumber = "88888";
+customer4.CompanyName = "ABC";
+customer4.TaxNumber = "0987654322";
+
+
+// Value Types : int, decimal, float, double, bool, char, byte, short, long Value Types: Değer Tipler - Stack Memory'de tutulur.
+int number1 = 10;
+int number2 = 20;
+number1 = number2;
+number2 = 100;
+Console.WriteLine(number1); // 20
+
+
+// Reference Types : array, class, interface, string Reference Types: Referans Tipler - Heap Memory'de tutulur.
+string[] cities1 = new string[] { "Ankara", "Adana", "Afyon" };
+string[] cities2 = new string[] { "Bursa", "Bolu", "Balıkesir" };
+cities1 = cities2;
+cities2[0] = "İstanbul";
+Console.WriteLine(cities1[0]); // İstanbul
+
+
+BaseCustomer[] customers =  { customer1, customer2, customer3, customer4 };
+/*
+ Polymorphism : Çok biçimlilik demektir. Bir nesnenin farklı amaçlar için kullanılabilmesidir. Bir nesnenin bir çok farklı tipte referansını tutabilmesidir. Mesela BaseCustomer tipinde bir diziye hem IndividualCustomer hem de CorporateCustomer tiplerindeki nesneleri atayabiliyoruz.
+ */
+foreach(var customer in customers)
+{
+    Console.WriteLine(customer.CustomerNumber);
+}
+
