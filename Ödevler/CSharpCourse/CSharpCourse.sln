@@ -15,15 +15,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops", "Loops\Loops.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.csproj", "{1CEED832-55B0-4593-8927-92B2C2C009AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{D6147243-4330-41DE-8374-74FDDF91C014}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes", "Classes\Classes.csproj", "{D6147243-4330-41DE-8374-74FDDF91C014}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecapDemo1", "RecapDemo1\RecapDemo1.csproj", "{A8B2C76E-2F55-4982-BA5F-8656B4D9E667}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecapDemo1", "RecapDemo1\RecapDemo1.csproj", "{A8B2C76E-2F55-4982-BA5F-8656B4D9E667}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{731E3351-3758-4D46-A056-3E131A0BE02C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{731E3351-3758-4D46-A056-3E131A0BE02C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesDemo", "InterfacesDemo\InterfacesDemo.csproj", "{D660534A-051F-4728-AADA-9E37200CA34D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfacesDemo", "InterfacesDemo\InterfacesDemo.csproj", "{D660534A-051F-4728-AADA-9E37200CA34D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{6EEE3AB1-1D3B-46B5-A28B-44D9B1486369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{6EEE3AB1-1D3B-46B5-A28B-44D9B1486369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceTypes", "ReferenceTypes\ReferenceTypes.csproj", "{3106C4F2-94AC-4C68-BC8B-386E9C1C3FF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructor", "Constructor\Constructor.csproj", "{539F0721-6124-448B-99F1-5B143F83F529}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces2", "Interfaces2\Interfaces2.csproj", "{028A71FC-3661-4BDC-964C-48500B3F6AAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +81,18 @@ Global
 		{6EEE3AB1-1D3B-46B5-A28B-44D9B1486369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EEE3AB1-1D3B-46B5-A28B-44D9B1486369}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EEE3AB1-1D3B-46B5-A28B-44D9B1486369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3106C4F2-94AC-4C68-BC8B-386E9C1C3FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3106C4F2-94AC-4C68-BC8B-386E9C1C3FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3106C4F2-94AC-4C68-BC8B-386E9C1C3FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3106C4F2-94AC-4C68-BC8B-386E9C1C3FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{539F0721-6124-448B-99F1-5B143F83F529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{539F0721-6124-448B-99F1-5B143F83F529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{539F0721-6124-448B-99F1-5B143F83F529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{539F0721-6124-448B-99F1-5B143F83F529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028A71FC-3661-4BDC-964C-48500B3F6AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028A71FC-3661-4BDC-964C-48500B3F6AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028A71FC-3661-4BDC-964C-48500B3F6AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028A71FC-3661-4BDC-964C-48500B3F6AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
