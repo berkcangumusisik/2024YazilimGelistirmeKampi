@@ -1,4 +1,6 @@
-﻿using Entities.Concretes;
+﻿using Business.Dtos.Requests;
+using Business.Dtos.Responses;
+using Entities.Concretes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +11,12 @@ namespace Business.Abstracts;
 
 public interface IBrandService
 {
-    Brand Add(Brand brand);
+    CreatedBrandResponse Add(CreateBrandRequest brand);
     List<Brand> GetAll();
     
 }
 /**
  Veri tabanı nesneleri ile iş katmanı arasında bir köprü görevi gören servis katmanıdır.Kullanıcıdan alınan verileri iş katmanına iletir ve iş katmanından gelen verileri kullanıcıya iletir. Kullanıcı ihtiyacı olan verileri servis katmanı aracılığı ile alır.
+ response : Kullanıcıya geri dönecek verileri içerir.
+ request : Kullanıcıdan alınan verileri içerir.
  */
